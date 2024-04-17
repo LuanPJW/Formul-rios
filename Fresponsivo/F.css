@@ -16,8 +16,8 @@ body {
 }
 
 .conteiner {
-    width: 80%;
-    height: 80vh;
+    width: 85%;
+    height: 85vh;
     display: flex;
     box-shadow: 5px 5px 10px rgba(0, 0, 0 .212);
 }
@@ -41,24 +41,25 @@ body {
     align-items: center;
     flex-direction: column;
     background-color: #fff;
-    padding: 3rem;
+    padding: 2rem;
 }
 
 .form-header {
-    margin-bottom: 3rem;
+    margin-bottom: 1px;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
 }
 
 .login-button {
     display: flex;
     align-items: center;
+    margin-left: 15rem;
 }
 
 .login-button button {
     border: none;
     background-color: #6c63ff;
-    padding: 0.4rem 1rem;
+    padding: 0.5rem 1rem;
     border-radius: 5px;
     cursor: pointer;
 }
@@ -99,7 +100,7 @@ body {
 
 .input-box input {
     margin: 0.6rem 0;
-    padding: 0.8rem 1.2rem;
+    padding: 0.8rem 1.1rem;
     border: none;
     border-radius: 10px;
     box-shadow: 1px 1px 6px #0000001c;
@@ -115,9 +116,10 @@ body {
 
 .input-box label, 
 .gender-title h6 {
-    font-size: 0.75rem;
-    font-weight: 600;
+    font-size: 0.8rem;
+    font-weight: 800;
     color: #000000c0;
+    padding: 0.1px;
 }
 
 .input-box input::placeholder {
@@ -125,7 +127,7 @@ body {
 }
 
 .gender-group {
-    display: flex;
+    display: block;
     justify-content: space-between;
     margin-top: 0.62rem;
     padding: 0 0.5rem;
@@ -137,7 +139,7 @@ body {
 }
 
 .gender-input input {
-    margin-right: 0.35rem;
+    margin-right: 0.37rem;
 }
 
 .gender-input label {
@@ -148,10 +150,64 @@ body {
 
 .continue-button button {
    width: 100%;
-   margin-top: 2.5rem;
+   margin-top: 2.3rem;
    border: none;
    background-color: #6c63ff;
-   padding: 0.62rem;
+   padding: 0.61rem;
    border-radius: 5px;
    cursor: pointer;
+   margin-bottom: 1rem
 }
+
+.continue-button button:hover {
+    background-color: #6c63ff;
+}
+
+.continue-button button a {
+    text-decoration: none;
+    font-size: 0.93rem;
+    font-weight: 500;
+    color: #fff;
+}
+
+@media screen and (max-width: 1330px) {
+    .form-image {
+        display: none;
+    }
+
+    .container {
+        width: 50%;
+    }
+
+    .form {
+        width: 100%;
+    }
+}
+
+@media screen and (max-widdth: 1064px) {
+    .container {
+        width: 90%;
+        height: auto;
+    }
+
+    .input-group {
+        flex-direction: column;
+        overflow-y: scroll;
+        flex-wrap: nowrap;
+        max-height: 10rem;
+        padding-right: 5rem;
+    }
+
+    .gender-input {
+        margin-top: 2rem;
+    }
+
+    .gender-group {
+        flex-direction: column;
+    }
+
+    .gender-input {
+        margin-top: 0.5rem;
+    }
+}
+    
