@@ -22,12 +22,23 @@ body {
     box-shadow: 5px 5px 10px rgba(0, 0, 0 .212);
 }
 
+.RD {
+   position: absolute;
+   top: 30%;
+   font-style: oblique;
+   font-size: 200%;
+}
+
 .form-image {
     width: 50%;
     display: flex;
     justify-content: center;
     background-color: #fde3a7d7;
     padding: 1rem;
+    color: #6b63fff1;
+    align-items: flex-end;
+    text-align-last: center;
+    
 }
 
 .form-image img {
